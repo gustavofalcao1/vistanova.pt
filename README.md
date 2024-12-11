@@ -1,4 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vista Nova Website
+
+Este é um projeto desenvolvido em Next.js para o website da Vista Nova, baseado em um design moderno e responsivo.
+
+## Objetivo
+
+O projeto foi desenvolvido tendo como base dois layouts principais:
+- `desktop.png`: Layout para visualização em dispositivos desktop
+- `mobile.png`: Layout otimizado para dispositivos móveis
+
+## Tecnologias
+
+- [Next.js](https://nextjs.org) - Framework React para produção
+- TypeScript - Superset JavaScript com tipagem estática
+- Tailwind CSS - Framework CSS utilitário
+- ESLint - Linter para JavaScript/TypeScript
+
+## Começando
+
+1. Clone o repositório
+2. Instale as dependências:
+```bash
+npm install
+```
+
+3. Inicie o servidor de desenvolvimento:
+```bash
+npm run dev
+```
+
+4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador
+
+## Responsividade
+
+O site foi desenvolvido seguindo o conceito mobile-first, garantindo uma experiência consistente em diferentes dispositivos:
+- Layout mobile otimizado para smartphones
+- Layout desktop com experiência rica para telas maiores
+
+## Estrutura do Projeto
+
+- `/assets` - Arquivos de design e imagens base
+- `/public` - Arquivos estáticos
+- `/src` - Código fonte da aplicação
+  - `/app` - Rotas e componentes principais
+  - `/components` - Componentes reutilizáveis
+  - `/styles` - Estilos globais e configurações do Tailwind
 
 ## Getting Started
 

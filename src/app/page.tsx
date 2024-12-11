@@ -2,6 +2,7 @@ import Image from "next/image";
 import Partners from "@/components/Partners";
 import Services from "@/components/Services";
 import Navigation from "@/components/Navigation";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -14,17 +15,15 @@ export default function Home() {
             <h1 className="text-3xl md:text-4xl font-bold mb-6">Realize todos os seus sonhos connosco</h1>
             <p className="mb-8">Faça a simulação do seu crédito sem custos e obtenha crédito para si!</p>
             
-            {/* Form */}
-            <form className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <input type="text" placeholder="Nome" className="p-2 border rounded text-gray-800" />
-                <input type="email" placeholder="Email" className="p-2 border rounded text-gray-800" />
-                <input type="tel" placeholder="Telemóvel" className="p-2 border rounded text-gray-800" />
-              </div>
-              <button className="mt-4 w-full bg-red-600 text-white py-2 rounded hover:bg-red-700">
-                Enviar
-              </button>
-            </form>
+            <ContactForm 
+              fields={[
+                { name: 'name', type: 'text', placeholder: 'Nome', required: true },
+                { name: 'email', type: 'email', placeholder: 'Email', required: true },
+                { name: 'phone', type: 'tel', placeholder: 'Telemóvel', required: true }
+              ]}
+              className="bg-white p-6 rounded-lg shadow-lg"
+            />
+            
           </div>
         </div>
       </section>
@@ -99,14 +98,20 @@ export default function Home() {
                 <p>agathabatista@maxfinance.pt</p>
               </div>
             </div>
-            <form className="space-y-4 mt-16">
-              <input type="text" placeholder="Nome" className="w-full p-2 rounded text-gray-800" />
-              <input type="email" placeholder="Email" className="w-full p-2 rounded text-gray-800" />
-              <textarea placeholder="Mensagem" rows={4} className="w-full p-2 rounded text-gray-800"></textarea>
-              <button className="bg-red-600 text-white py-2 px-6 rounded hover:bg-red-700">
-                Enviar
-              </button>
-            </form>
+            <div className="text-center">
+              <h2 className="text-3xl font-bold mb-4">Entre em Contacto</h2>
+              <p className="text-gray-600 mb-6">
+                Estamos aqui para ajudar. Entre em contacto connosco!
+              </p>
+              <ContactForm 
+                fields={[
+                  { name: 'name', type: 'text', placeholder: 'Nome', required: true },
+                  { name: 'email', type: 'email', placeholder: 'Email', required: true },
+                  { name: 'message', type: 'textarea', placeholder: 'Mensagem', required: true, rows: 4 }
+                ]}
+                className="space-y-4 mt-16"
+              />
+            </div>
           </div>
         </div>
       </section>

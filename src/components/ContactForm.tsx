@@ -44,7 +44,7 @@ export default function ContactForm({ fields, className = '', buttonText = 'Envi
 
       setStatus('success');
       setFormData(fields.reduce((acc, field) => ({ ...acc, [field.name]: '' }), {}));
-    } catch (error) {
+    } catch {
       setStatus('error');
     }
 

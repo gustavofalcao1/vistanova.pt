@@ -37,7 +37,7 @@ export default function ContactForm({ fields, className = '', buttonText = 'Envi
           from_name: formData.name,
           message: formData.message,
           reply_to: formData.email,
-          phone: formData.phone
+          phone: `Telefone: ${formData.phone}`
         },
         '52nLjYjuEpvc48ieH'
       );

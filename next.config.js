@@ -4,7 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  domain: 'vistanova.pt',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '.' : '',
+  trailingSlash: true
 }
 
 module.exports = nextConfig

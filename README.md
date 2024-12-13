@@ -1,6 +1,6 @@
 # Vista Nova Website
 
-Este é um projeto desenvolvido em Next.js para o website da Vista Nova, baseado em um design moderno e responsivo.
+Website institucional da Vista Nova, desenvolvido com Next.js e hospedado no GitHub Pages.
 
 ## Objetivo
 
@@ -10,25 +10,34 @@ O projeto foi desenvolvido tendo como base dois layouts principais:
 
 ## Tecnologias
 
-- [Next.js](https://nextjs.org) - Framework React para produção
-- TypeScript - Superset JavaScript com tipagem estática
-- Tailwind CSS - Framework CSS utilitário
-- ESLint - Linter para JavaScript/TypeScript
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 
 ## Começando
 
-1. Clone o repositório
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/vistanova.pt.git
+cd vistanova.pt
+```
+
 2. Instale as dependências:
 ```bash
 npm install
+# ou
+yarn install
 ```
 
 3. Inicie o servidor de desenvolvimento:
 ```bash
 npm run dev
+# ou
+yarn dev
 ```
 
-4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador
+O site estará disponível em [http://localhost:3000](http://localhost:3000)
 
 ## Responsividade
 
@@ -45,37 +54,36 @@ O site foi desenvolvido seguindo o conceito mobile-first, garantindo uma experi�
   - `/components` - Componentes reutilizáveis
   - `/styles` - Estilos globais e configurações do Tailwind
 
-## Getting Started
+## Deploy
 
-First, run the development server:
+O site é automaticamente deployado no GitHub Pages quando alterações são enviadas para a branch main.
 
+Para fazer deploy manualmente:
+
+1. Execute o script de deploy:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run deploy
+# ou
+yarn deploy
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Este comando irá:
+- Fazer build do projeto
+- Criar/atualizar a branch gh-pages
+- Fazer push das alterações para o GitHub
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+O site estará disponível em: https://seu-usuario.github.io/vistanova.pt
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Imagens
 
-## Learn More
+Para garantir que as imagens funcionem corretamente no GitHub Pages:
 
-To learn more about Next.js, take a look at the following resources:
+1. Todas as imagens devem estar na pasta `public`
+2. Ao referenciar imagens no código, use o caminho completo incluindo `/vistanova.pt`, exemplo:
+```jsx
+<img src="/vistanova.pt/images/exemplo.jpg" />
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Licença
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.

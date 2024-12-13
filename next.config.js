@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  basePath: '/vistanova.pt',
+  domain: 'vistanova.pt',
 }
 
 module.exports = nextConfig

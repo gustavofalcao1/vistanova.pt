@@ -1,13 +1,13 @@
 {
   "name": "vistanova.pt",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "node scripts/deploy.js"
+    "serve": "serve out"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -23,6 +23,7 @@
     "eslint-config-next": "15.0.4",
     "fs-extra": "^11.2.0",
     "postcss": "^8",
+    "serve": "^14.2.4",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }

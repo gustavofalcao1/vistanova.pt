@@ -17,9 +17,9 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <a onClick={(e) => scrollToSection(e, 'home')} className="flex items-center cursor-pointer">
             <Image
-              src="/logo.png"
-              alt="MaxFinance Logo"
-              width={150}
+              src="/logo-nova.png"
+              alt="MaxFinance Vista Nova Logo"
+              width={110}
               height={40}
               className="object-contain"
             />

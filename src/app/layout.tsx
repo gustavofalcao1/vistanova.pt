@@ -16,6 +16,12 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Vista Nova - Financiamento para o seu sonho de casa propria",
   description: "Vista Nova - Financiamento para o seu sonho de casa propria",
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.svg', type: 'image/svg+xml' }
+    ]
+  }
 };
 
 export default function RootLayout({

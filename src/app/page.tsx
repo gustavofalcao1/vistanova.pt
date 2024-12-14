@@ -73,9 +73,10 @@ export default function Home() {
             <div>
               <h2 className="text-2xl font-bold mb-6">Fale conosco</h2>
               <div className="space-y-1 mt-8">
-                <div className="flex flex-row items-center space-x-1">
+                <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-2">
                   <p>+351 22 375 06 02</p>
-                  <p className="text-gray-400 text-sm">– Chamada para a rede fixa nacional</p>
+                  <p className="hidden lg:block text-gray-400 text-sm">-</p>
+                  <p className="text-gray-400 text-sm">Chamada para a rede fixa nacional</p>
                 </div>
                 <p>jverissimo@vistanova.pt</p>
                 <p>Rua da Bélgica, 3434–H</p>
@@ -83,17 +84,19 @@ export default function Home() {
               </div>
               <div className="space-y-1 mt-8">
                 <p className="font-bold text-xl">Jorge Veríssimo - Diretor Geral</p>
-                <div className="flex flex-row items-center space-x-1">
+                <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-2">
                   <p>+351 96 509 18 53</p>
-                  <p className="text-gray-400 text-sm">– Chamada para a rede fixa nacional</p>
+                  <p className="hidden lg:block text-gray-400 text-sm">-</p>
+                  <p className="text-gray-400 text-sm">Chamada para a rede fixa nacional</p>
                 </div>
                 <p>jverissimo@maxfinance.pt</p>
               </div>
               <div className="space-y-1 mt-8">
                 <p className="font-bold text-lg">Ágatha Santos - Gestora de crédito</p>
-                <div className="flex flex-row items-center space-x-1">
+                <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-2">
                   <p>+351 92 496 71 48</p>
-                  <p className="text-gray-400 text-sm">– Chamada para a rede fixa nacional</p>
+                  <p className="hidden lg:block text-gray-400 text-sm">-</p>
+                  <p className="text-gray-400 text-sm">Chamada para a rede fixa nacional</p>
                 </div>
                 <p>agathabatista@maxfinance.pt</p>
               </div>

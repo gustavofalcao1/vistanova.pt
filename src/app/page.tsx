@@ -92,7 +92,7 @@ export default function Home() {
                 <p>jverissimo@maxfinance.pt</p>
               </div>
               <div className="space-y-1 mt-8">
-                <p className="font-bold text-lg">Ágatha Santos - Gestora de crédito</p>
+                <p className="font-bold text-lg">Ágatha Santos - Gestora de Crédito</p>
                 <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-2">
                   <p>+351 92 496 71 48</p>
                   <p className="hidden lg:block text-gray-400 text-sm">-</p>

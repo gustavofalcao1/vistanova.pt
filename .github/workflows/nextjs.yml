@@ -34,13 +34,14 @@ jobs:
           cache: 'yarn'
       
       - name: Install dependencies
-        run: |
-          yarn install --frozen-lockfile
+        run: yarn install --frozen-lockfile
           
       - name: Build with Next.js
-        run: yarn build
+        run: |
+          yarn build
+          touch out/.nojekyll
         env:
-          NODE_ENV: production
+          NEXT_PUBLIC_BASE_PATH: /vistanova.pt
       
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4

@@ -41,7 +41,7 @@ jobs:
           yarn build
           touch out/.nojekyll
         env:
-          NEXT_PUBLIC_BASE_PATH: /vistanova.pt
+          NEXT_PUBLIC_BASE_PATH: ""
       
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4

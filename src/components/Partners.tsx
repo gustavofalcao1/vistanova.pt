@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
 const partners = [
-  { name: 'BP', logo: '/partners/logo-bp.png' },
   { name: 'Abanca', logo: '/partners/logo-abanca.png' },
   { name: 'BancoCTT', logo: '/partners/logo-bancoctt.png' },
   { name: 'Bankinter', logo: '/partners/logo-bankinter.png' },

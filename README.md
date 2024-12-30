@@ -1,89 +1,118 @@
 # Vista Nova Website
 
-Website institucional da Vista Nova, desenvolvido com Next.js e hospedado no GitHub Pages.
+## Project Overview
+Corporate website for Vista Nova, built with Next.js and hosted on GitHub Pages. The project follows modern web development practices and is optimized for both desktop and mobile devices.
 
-## Objetivo
+## Tech Stack
+- **Framework:** Next.js 15.0.4
+- **UI Library:** React 19.0.0
+- **Styling:** Tailwind CSS 3.4.1
+- **Language:** TypeScript 5
+- **Email Service:** EmailJS 4.4.1
+- **UI Components:** Headless UI 2.2.0
 
-O projeto foi desenvolvido tendo como base dois layouts principais:
-- `desktop.png`: Layout para visualização em dispositivos desktop
-- `mobile.png`: Layout otimizado para dispositivos móveis
+## Latest Updates (v0.2.4)
+- Improved mobile navigation with animated hamburger menu
+- Enhanced UI/UX for better accessibility
+- Updated services descriptions
+- Refined legal information display
+- Optimized responsive design
+- Fixed SVG icons display issues
 
-## Tecnologias
+## Development Setup
 
-- [Next.js](https://nextjs.org/)
-- [React](https://reactjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [TypeScript](https://www.typescriptlang.org/)
-
-## Começando
-
-1. Clone o repositório:
+1. Clone the repository:
 ```bash
-git clone https://github.com/seu-usuario/vistanova.pt.git
+git clone https://github.com/your-user/vistanova.pt.git
 cd vistanova.pt
 ```
 
-2. Instale as dependências:
+2. Install dependencies:
 ```bash
 npm install
-# ou
+# or
 yarn install
 ```
 
-3. Inicie o servidor de desenvolvimento:
+3. Run the development server:
 ```bash
 npm run dev
-# ou
+# or
 yarn dev
 ```
 
-O site estará disponível em [http://localhost:3000](http://localhost:3000)
+Access the development server at [http://localhost:3000](http://localhost:3000)
 
-## Responsividade
+## Project Structure
 
-O site foi desenvolvido seguindo o conceito mobile-first, garantindo uma experiência consistente em diferentes dispositivos:
-- Layout mobile otimizado para smartphones
-- Layout desktop com experiência rica para telas maiores
+```
+vistanova.pt/
+├── assets/           # Design assets and base images
+├── public/           # Static files and images
+├── src/
+│   ├── app/         # Next.js app router and main pages
+│   └── components/  # Reusable React components
+├── .eslintrc.json   # ESLint configuration
+├── next.config.js   # Next.js configuration
+├── tailwind.config.ts # Tailwind CSS configuration
+└── tsconfig.json    # TypeScript configuration
+```
 
-## Estrutura do Projeto
+## Key Features
+- **Responsive Design:** Mobile-first approach with optimized layouts for both mobile and desktop
+- **Type Safety:** Full TypeScript implementation
+- **Modern Styling:** Tailwind CSS for utility-first styling
+- **Contact Form:** Integrated with EmailJS for form submissions
+- **Performance:** Optimized builds with Next.js
 
-- `/assets` - Arquivos de design e imagens base
-- `/public` - Arquivos estáticos
-- `/src` - Código fonte da aplicação
-  - `/app` - Rotas e componentes principais
-  - `/components` - Componentes reutilizáveis
-  - `/styles` - Estilos globais e configurações do Tailwind
+## Available Scripts
+- `npm run dev` - Start development server
+- `npm run build` - Create production build
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run serve` - Serve production build locally
 
-## Deploy
+## Deployment
+The website automatically deploys to GitHub Pages when changes are pushed to the main branch.
 
-O site é automaticamente deployado no GitHub Pages quando alterações são enviadas para a branch main.
-
-Para fazer deploy manualmente:
-
-1. Execute o script de deploy:
+### Manual Deployment
 ```bash
-npm run deploy
-# ou
-yarn deploy
+npm run build
+# Files will be generated in the 'out' directory
 ```
 
-Este comando irá:
-- Fazer build do projeto
-- Criar/atualizar a branch gh-pages
-- Fazer push das alterações para o GitHub
-
-O site estará disponível em: https://seu-usuario.github.io/vistanova.pt
-
-## Imagens
-
-Para garantir que as imagens funcionem corretamente no GitHub Pages:
-
-1. Todas as imagens devem estar na pasta `public`
-2. Ao referenciar imagens no código, use o caminho completo incluindo `/vistanova.pt`, exemplo:
+### Image Guidelines
+- Store all images in the `public` directory
+- When referencing images in code, include the full path:
 ```jsx
-<img src="/vistanova.pt/images/exemplo.jpg" />
+<img src="/vistanova.pt/images/example.jpg" alt="Description" />
 ```
 
-## Licença
+## Development Guidelines
+1. **Code Style**
+   - Follow ESLint configuration
+   - Use TypeScript strictly
+   - Follow component-based architecture
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+2. **Component Structure**
+   - Keep components small and focused
+   - Use TypeScript interfaces for props
+   - Implement proper error handling
+
+3. **Styling**
+   - Use Tailwind CSS classes
+   - Follow mobile-first approach
+   - Maintain consistent spacing and typography
+
+4. **Performance**
+   - Optimize images before committing
+   - Implement lazy loading where appropriate
+   - Monitor bundle size
+
+## Environment Setup
+The project requires:
+- Node.js 18+ (LTS recommended)
+- npm or yarn package manager
+
+## License
+This project is private and for internal use only. All rights reserved.

@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic';
 
 const Map = () => {
   return (
-    <div className="relative w-full h-[450px] overflow-hidden rounded-lg">
+    <div className="relative w-full h-[350px] overflow-hidden rounded-lg">
       <div 
         className="absolute inset-0"
         dangerouslySetInnerHTML={{

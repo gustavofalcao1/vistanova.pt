@@ -8,7 +8,6 @@ import Map from "@/components/Map";
 import LegalInfoPopup from "@/components/LegalInfoPopup";
 
 export default function Home() {
-  const [termsOpen, setTermsOpen] = useState(false);
   const [legalInfoOpen, setLegalInfoOpen] = useState(false);
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {

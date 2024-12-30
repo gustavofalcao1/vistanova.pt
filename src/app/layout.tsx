@@ -14,13 +14,10 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Vista Nova - Intermediário de Crédito",
-  description: "Vista Nova - Intermediário de Crédito",
+  title: "Vista Nova - Intermediação de Crédito",
+  description: "Vista Nova - Intermediário de Crédito Vinculado registado no Banco de Portugal",
   icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon.svg', type: 'image/svg+xml' }
-    ]
+    icon: '/favicon.png'
   }
 };
 

@@ -1,118 +1,160 @@
 # Vista Nova Website
 
-## Project Overview
-Corporate website for Vista Nova, built with Next.js and hosted on GitHub Pages. The project follows modern web development practices and is optimized for both desktop and mobile devices.
+**Corporate website for Vista Nova**, developed using modern full-stack practices with performance, accessibility, and maintainability in mind.
 
-## Tech Stack
-- **Framework:** Next.js 15.0.4
-- **UI Library:** React 19.0.0
-- **Styling:** Tailwind CSS 3.4.1
-- **Language:** TypeScript 5
-- **Email Service:** EmailJS 4.4.1
-- **UI Components:** Headless UI 2.2.0
+---
 
-## Latest Updates (v0.2.4)
-- Improved mobile navigation with animated hamburger menu
-- Enhanced UI/UX for better accessibility
-- Updated services descriptions
-- Refined legal information display
-- Optimized responsive design
-- Fixed SVG icons display issues
+## 🌐 Overview
 
-## Development Setup
+This project delivers a responsive, mobile-first experience powered by **Next.js**, styled with **Tailwind CSS**, and fully typed with **TypeScript**. Email handling is managed via **EmailJS**, allowing client-side form submissions without a backend.
 
-1. Clone the repository:
+---
+
+## 🚧 Tech Stack
+
+- **Framework:** Next.js `15.0.4`
+- **Language:** TypeScript `5`
+- **UI Library:** React `19.0.0`
+- **Styling:** Tailwind CSS `3.4.1`
+- **Components:** Headless UI `2.2.0`
+- **Email Integration:** EmailJS `4.4.1`
+
+---
+
+## 🆕 Latest Updates (v0.2.4)
+
+- Mobile navigation: new animated hamburger menu
+- Accessibility: improved UX and keyboard navigation
+- Content: updated services and legal sections
+- Responsiveness: layout refinements on all breakpoints
+- Bug fixes: SVG rendering issues resolved
+
+---
+
+## 📦 Getting Started
+
+### 1. Clone the repository
 ```bash
-git clone https://github.com/your-user/vistanova.pt.git
+git clone https://github.com/gustavofalcao1/vistanova.pt.git
 cd vistanova.pt
 ```
 
-2. Install dependencies:
+### 2. Install dependencies
 ```bash
 npm install
 # or
 yarn install
 ```
 
-3. Run the development server:
+### 3. Start development server
 ```bash
 npm run dev
 # or
 yarn dev
 ```
 
-Access the development server at [http://localhost:3000](http://localhost:3000)
+Visit: [http://localhost:3000](http://localhost:3000)
 
-## Project Structure
+---
+
+## 🗂 Project Structure
 
 ```
 vistanova.pt/
-├── assets/           # Design assets and base images
-├── public/           # Static files and images
+├── assets/             # Design assets (e.g. mockups, raw images)
+├── public/             # Static files served directly
 ├── src/
-│   ├── app/         # Next.js app router and main pages
-│   └── components/  # Reusable React components
-├── .eslintrc.json   # ESLint configuration
-├── next.config.js   # Next.js configuration
-├── tailwind.config.ts # Tailwind CSS configuration
-└── tsconfig.json    # TypeScript configuration
+│   ├── app/            # Main routes using Next.js App Router
+│   └── components/     # Reusable UI components
+├── .eslintrc.json      # ESLint rules and formatting
+├── next.config.js      # Next.js configuration
+├── tailwind.config.ts  # Tailwind CSS theme setup
+└── tsconfig.json       # TypeScript config and strict typing
 ```
 
-## Key Features
-- **Responsive Design:** Mobile-first approach with optimized layouts for both mobile and desktop
-- **Type Safety:** Full TypeScript implementation
-- **Modern Styling:** Tailwind CSS for utility-first styling
-- **Contact Form:** Integrated with EmailJS for form submissions
-- **Performance:** Optimized builds with Next.js
+---
 
-## Available Scripts
-- `npm run dev` - Start development server
-- `npm run build` - Create production build
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-- `npm run serve` - Serve production build locally
+## ✨ Key Features
 
-## Deployment
-The website automatically deploys to GitHub Pages when changes are pushed to the main branch.
+- **Responsive Design** — Mobile-first, fluid grid layouts
+- **Form Handling** — Integrated with EmailJS (no server needed)
+- **Type Safety** — Full TypeScript coverage
+- **Utility-First Styling** — Rapid styling with Tailwind
+- **SEO-Friendly** — Next.js optimized head and structure
+
+---
+
+## 🔧 Available Scripts
+
+```bash
+npm run dev     # Start development server
+npm run build   # Generate production build
+npm run start   # Run production server
+npm run lint    # Lint code with ESLint
+npm run serve   # Serve 'out' directory locally
+```
+
+---
+
+## 🚀 Deployment
+
+This project uses **GitHub Pages** for deployment. Every commit to `main` triggers an automatic deploy.
 
 ### Manual Deployment
 ```bash
 npm run build
-# Files will be generated in the 'out' directory
+# Output will be in the `out/` folder
 ```
 
-### Image Guidelines
-- Store all images in the `public` directory
-- When referencing images in code, include the full path:
+### Image Handling
+- Store images in `public/`
+- Reference like:
 ```jsx
-<img src="/vistanova.pt/images/example.jpg" alt="Description" />
+<img src="/images/example.jpg" alt="Description" />
 ```
 
-## Development Guidelines
-1. **Code Style**
-   - Follow ESLint configuration
-   - Use TypeScript strictly
-   - Follow component-based architecture
+---
 
-2. **Component Structure**
-   - Keep components small and focused
-   - Use TypeScript interfaces for props
-   - Implement proper error handling
+## 📐 Development Guidelines
 
-3. **Styling**
-   - Use Tailwind CSS classes
-   - Follow mobile-first approach
-   - Maintain consistent spacing and typography
+### Code Style
+- Follow ESLint rules strictly
+- Use TypeScript with explicit types
+- Prioritize readability and component isolation
 
-4. **Performance**
-   - Optimize images before committing
-   - Implement lazy loading where appropriate
-   - Monitor bundle size
+### Component Architecture
+- Keep components atomic and reusable
+- Use interfaces for props
+- Implement graceful error boundaries
 
-## Environment Setup
-The project requires:
-- Node.js 18+ (LTS recommended)
+### Styling Conventions
+- Tailwind-first styling approach
+- Consistent use of spacing, font scales, and breakpoints
+- Prefer semantic HTML wherever possible
+
+### Performance
+- Use optimized images only
+- Implement lazy loading for non-critical content
+- Regularly check build size and static output
+
+---
+
+## 🛠 Environment Requirements
+
+- Node.js `18+` (LTS recommended)
 - npm or yarn package manager
 
-## License
-This project is private and for internal use only. All rights reserved.
+---
+
+## 📄 License
+
+This project is **private** and intended solely for internal use by Vista Nova.
+All rights reserved.
+
+---
+
+## 👤 Author
+**Gustavo Falcão**  
+[GitHub @gustavofalcao1](https://github.com/gustavofalcao1)  
+[Project Repository](https://github.com/gustavofalcao1/vistanova.pt)
+
